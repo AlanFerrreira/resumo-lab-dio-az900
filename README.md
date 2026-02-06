@@ -1,7 +1,8 @@
 # Fundamentos de Cloud Computing – AZ-900
 
-> Resumo dos principais conceitos estudados no curso **AZ-900 – Microsoft Azure Fundamentals**  
-> Conteúdo baseado nas aulas de **Valéria Baptista**
+> Resumo completo dos conceitos fundamentais de Cloud Computing e Microsoft Azure  
+> Conteúdo baseado no curso **AZ-900 – Microsoft Azure Fundamentals**  
+> Instrutora: **Valéria Baptista**
 
 ---
 
@@ -21,8 +22,8 @@ A computação em nuvem é o fornecimento de serviços de computação pela inte
 
 ### Nuvem Pública
 - Pertence a um provedor de serviços de nuvem (hosting)  
-- Fornece recursos para várias organizações e usuários  
-- Acessada por meio de conexão segura pela internet  
+- Fornece recursos e serviços para várias organizações e usuários  
+- Acessada por meio de conexão de rede segura  
 
 ### Nuvem Híbrida
 - Combina nuvens públicas e privadas  
@@ -33,29 +34,29 @@ A computação em nuvem é o fornecimento de serviços de computação pela inte
 ## 🔍 Comparação dos Modelos de Nuvem
 
 ### Nuvem Pública
-- Sem despesas de capital (CapEx) para escalar  
-- Recursos podem ser provisionados e desprovisionados rapidamente  
+- Nenhuma despesa de capital (CapEx) para escalar  
+- Provisionamento e desprovisionamento rápidos  
 - Pagamento conforme o uso (*Pay as You Go*)  
 
 ### Nuvem Privada
 - Controle total sobre recursos e segurança  
-- Responsabilidade total pela manutenção e atualização do hardware  
+- Responsabilidade pela manutenção e atualização do hardware  
 
 ### Nuvem Híbrida
-- Flexibilidade para decidir onde executar aplicações  
+- Flexibilidade para definir onde executar aplicações  
 - Controle sobre segurança, conformidade e requisitos legais  
 
 ---
 
-## 💰 CapEx vs OpEx
+## 💰 CapEx e OpEx
 
 ### CapEx (Capital Expenditure)
-- Investimento inicial em infraestrutura física  
-- O valor do ativo se reduz ao longo do tempo  
+- Gasto inicial com infraestrutura física  
+- O valor do investimento se reduz ao longo do tempo  
 
 ### OpEx (Operational Expenditure)
 - Pagamento conforme o uso de produtos e serviços  
-- Cobrança imediata baseada no consumo  
+- Cobrança imediata  
 
 ### Modelo Baseado em Consumo
 - Pagamento apenas pelos recursos utilizados  
@@ -67,8 +68,8 @@ A computação em nuvem é o fornecimento de serviços de computação pela inte
 ## 🚀 Benefícios da Nuvem
 
 ### Alta Disponibilidade
-- Definida por SLA (Service Level Agreement)  
-- Garante níveis de disponibilidade e desempenho  
+- Definida por SLA (*Service Level Agreement*)  
+- Garante níveis de disponibilidade e desempenho dos serviços Azure  
 
 ### Escalabilidade
 - Ajuste de recursos conforme a demanda  
@@ -76,11 +77,11 @@ A computação em nuvem é o fornecimento de serviços de computação pela inte
 
 ### Elasticidade
 - Expansão ou redução automática/manual de recursos  
-- Ideal para variações repentinas de demanda  
+- Ideal para picos ou quedas repentinas de demanda  
 
 ### Confiabilidade
 - Arquitetura descentralizada e resiliente  
-- Recursos distribuídos em várias regiões  
+- Recursos distribuídos globalmente  
 
 ### Previsibilidade
 - Previsibilidade de desempenho e custos  
@@ -88,11 +89,11 @@ A computação em nuvem é o fornecimento de serviços de computação pela inte
 
 ### Segurança
 - Ferramentas de segurança fornecidas pelo Azure  
-- Algumas configurações são responsabilidade do cliente  
+- Parte da implementação é responsabilidade do cliente  
 
 ### Governança
 - Controle e padronização do ambiente de nuvem  
-- Garantia de conformidade e boas práticas  
+- Garante conformidade e boas práticas  
 
 ### Gerenciabilidade
 - Gerenciamento via:
@@ -105,29 +106,29 @@ A computação em nuvem é o fornecimento de serviços de computação pela inte
 
 ## 🧩 Tipos de Serviço de Nuvem
 
-### IaaS (Infraestrutura como Serviço)
+### IaaS – Infraestrutura como Serviço
 - Servidores virtuais  
 - Armazenamento e redes  
 - Sistemas operacionais  
 - Firewalls e segurança  
 
-### PaaS (Plataforma como Serviço)
-- Ambiente para desenvolvimento, testes e deploy  
+### PaaS – Plataforma como Serviço
+- Ambiente para desenvolvimento, teste e deploy  
 - Sistemas operacionais e ferramentas de desenvolvimento  
 - Gerenciamento de banco de dados  
 
-### SaaS (Software como Serviço)
+### SaaS – Software como Serviço
 - Aplicações acessadas via internet  
 - Exemplo: Microsoft 365, e-mail e calendários  
 
 ---
 
-## 🏗️ Arquitetura do Azure
+## 🏗️ Arquitetura e Serviços do Azure
 
 ### Regiões
 - Presença global  
-- Compostas por um ou mais datacenters  
-- Reduzem latência e atendem requisitos de conformidade  
+- Compostos por um ou mais datacenters  
+- Reduzem latência e garantem conformidade  
 
 ### Zonas de Disponibilidade
 - Proteção contra falhas de datacenter  
@@ -135,7 +136,7 @@ A computação em nuvem é o fornecimento de serviços de computação pela inte
 
 ### Pares de Regiões
 - Separação mínima de 300 milhas  
-- Replicação automática para alguns serviços  
+- Replicação automática e recuperação priorizada  
 
 ### Regiões Soberanas
 - Ambientes isolados para governos  
@@ -161,14 +162,14 @@ A computação em nuvem é o fornecimento de serviços de computação pela inte
 
 ## 🖥️ Computação no Azure
 
-- Máquinas Virtuais  
+- Máquinas Virtuais (VMs)  
 - Azure App Services  
 - Azure Container Instances  
 - Azure Kubernetes Service (AKS)  
 - Azure Virtual Desktop  
 
-### Máquinas Virtuais (VMs)
-- Emulações de computadores físicos  
+### Máquinas Virtuais
+- Emulação de computadores físicos  
 - Oferta de IaaS com controle total  
 
 ### Containers
@@ -177,11 +178,11 @@ A computação em nuvem é o fornecimento de serviços de computação pela inte
 
 ### Azure Functions
 - Computação sem servidor (Serverless)  
-- Executa código baseado em eventos  
+- Execução baseada em eventos  
 
 ---
 
-## 🌐 Rede no Azure
+## 🌐 Serviços de Rede
 
 - Azure Virtual Network (VNet)  
 - VPN Gateway  
@@ -212,13 +213,41 @@ A computação em nuvem é o fornecimento de serviços de computação pela inte
 ## 🔄 Migração para o Azure
 
 ### Azure Data Box
-- Transferência de até 80TB  
-- Ideal para locais com baixa conectividade  
+- Transferência de até 80 TB  
+- Ideal para locais com conectividade limitada  
 
 ### Ferramentas
 - AzCopy  
 - Azure Storage Explorer  
 - Azure File Sync  
+
+---
+
+## 🔐 Identidade, Acesso e Segurança
+
+### Microsoft Entra ID
+- Gerenciamento de identidades e acessos  
+- Autenticação, SSO, B2B e gerenciamento de dispositivos  
+
+### Autenticação vs Autorização
+- **Autenticação**: valida identidade  
+- **Autorização**: define permissões  
+
+### MFA – Autenticação Multifator
+- Exige dois ou mais fatores de autenticação  
+
+### Controle de Acesso Baseado em Função (RBAC)
+- Permissões granulares  
+- Acesso mínimo necessário  
+
+### Confiança Zero
+- Segurança em camadas  
+- Nenhuma confiança implícita  
+
+### Microsoft Defender para Nuvem
+- Monitoramento de segurança  
+- Detecção de ameaças e malware  
+- Recomendações de segurança  
 
 ---
 
