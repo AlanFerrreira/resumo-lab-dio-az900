@@ -1,11 +1,12 @@
 # ☁️ Conceitos Básicos de Cloud – AZ-900
 
-Resumo dos principais conceitos estudados no curso **AZ-900 – Microsoft Azure Fundamentals**, ministrado por **Valéria Baptista**.
+Resumo dos conceitos fundamentais de **Computação em Nuvem e Microsoft Azure**, com base no curso **AZ-900 – Microsoft Azure Fundamentals**, ministrado por **Valéria Baptista**.
 
 ---
 
-## 📌 Computação em Nuvem
+## 📘 Conceitos de Nuvem
 
+### Computação em Nuvem
 A computação em nuvem é o fornecimento de serviços de computação pela internet, permitindo:
 - Inovação mais rápida  
 - Recursos flexíveis  
@@ -17,16 +18,16 @@ A computação em nuvem é o fornecimento de serviços de computação pela inte
 
 ### 🔒 Nuvem Privada
 - Criada no datacenter da própria organização  
-- Total responsabilidade sobre operação e manutenção  
-- Não oferece acesso externo  
+- A organização é responsável por operar e manter os serviços  
+- Não oferece acesso a usuários externos  
 
 ### 🌐 Nuvem Pública
-- Pertence a um provedor de nuvem (ex: Microsoft Azure)  
-- Recursos compartilhados entre vários clientes  
-- Acesso via conexão segura pela internet  
+- Pertence a um provedor de nuvem ou hosting  
+- Recursos compartilhados entre várias organizações e usuários  
+- Acesso via conexão de rede segura  
 
 ### 🔀 Nuvem Híbrida
-- Combina nuvem pública e privada  
+- Combina nuvens públicas e privadas  
 - Permite executar aplicações no ambiente mais adequado  
 
 ---
@@ -34,16 +35,16 @@ A computação em nuvem é o fornecimento de serviços de computação pela inte
 ## 📊 Comparação dos Modelos de Nuvem
 
 ### Nuvem Pública
-- Sem despesas de capital (CapEx)
+- Nenhuma despesa de capital (CapEx)
 - Provisionamento e desprovisionamento rápidos
-- Pagamento conforme o uso (Pay as You Go)
+- Pagamento apenas pelo que é utilizado (Pay as You Go – OpEx)
 
 ### Nuvem Privada
 - Controle total de recursos e segurança
-- Responsabilidade total por manutenção e atualizações
+- Responsabilidade por manutenção e atualização do hardware
 
 ### Nuvem Híbrida
-- Flexibilidade na execução das aplicações
+- Flexibilidade para decidir onde executar aplicações
 - Controle de segurança, conformidade e requisitos legais
 
 ---
@@ -52,11 +53,11 @@ A computação em nuvem é o fornecimento de serviços de computação pela inte
 
 ### CapEx (Capital Expenditure)
 - Gasto inicial com infraestrutura física
-- Valor se deprecia ao longo do tempo
+- Valor reduz ao longo do tempo (depreciação)
 
 ### OpEx (Operational Expenditure)
 - Pagamento conforme o uso
-- Custos cobrados imediatamente
+- Cobrança imediata
 
 ### Modelo Baseado em Consumo
 - Pagamento apenas pelos recursos utilizados
@@ -72,7 +73,7 @@ A computação em nuvem é o fornecimento de serviços de computação pela inte
 
 ### Escalabilidade
 - Ajuste de recursos conforme a demanda
-- Redução de custos quando a demanda diminui
+- Pagamento apenas pelo que é utilizado
 
 ### Elasticidade
 - Expansão ou redução automática ou manual de recursos
@@ -83,12 +84,12 @@ A computação em nuvem é o fornecimento de serviços de computação pela inte
 - Continuidade mesmo em falhas regionais
 
 ### Previsibilidade
-- Controle de desempenho e custos
+- Previsibilidade de desempenho e custos
 - Baseada no Azure Well-Architected Framework
 
 ### Segurança
-- Ferramentas avançadas de proteção
-- Parte da segurança é responsabilidade do cliente
+- Ferramentas de segurança robustas
+- Parte da implementação é responsabilidade do cliente
 
 ### Governança
 - Controle, conformidade e padronização desde o início
@@ -108,15 +109,17 @@ A computação em nuvem é o fornecimento de serviços de computação pela inte
 - Armazenamento
 - Redes
 - Sistemas operacionais
+- Firewalls e segurança de rede
+- Datacenter físico
 
 ### PaaS – Platform as a Service
-- Ambiente para desenvolvimento e deploy
+- Ambiente para desenvolvimento, teste e deploy
 - Sem gerenciamento da infraestrutura
-- Foco em aplicações
+- Sistemas operacionais e ferramentas de desenvolvimento
 
 ### SaaS – Software as a Service
 - Aplicações prontas via internet
-- Exemplo: Microsoft 365
+- Exemplo: Microsoft 365, e-mail e calendários
 
 ---
 
@@ -129,7 +132,8 @@ A computação em nuvem é o fornecimento de serviços de computação pela inte
 
 ### Zonas de Disponibilidade
 - Datacenters fisicamente separados
-- Alta disponibilidade e resiliência
+- Energia, refrigeração e rede independentes
+- Conectados por fibra óptica privada
 
 ### Pares de Região
 - Separação mínima de 300 milhas
@@ -145,7 +149,7 @@ A computação em nuvem é o fornecimento de serviços de computação pela inte
 ## 📦 Recursos do Azure
 
 ### Grupo de Recursos
-- Contêiner lógico para recursos
+- Contêiner lógico para gerenciamento de recursos
 - Um recurso pertence a apenas um grupo
 
 ### Assinaturas
@@ -158,7 +162,7 @@ A computação em nuvem é o fornecimento de serviços de computação pela inte
 
 ---
 
-## 🖥️ Serviços de Computação
+## 🖥️ Computação no Azure
 
 - Máquinas Virtuais (VMs)
 - App Services
@@ -180,16 +184,22 @@ A computação em nuvem é o fornecimento de serviços de computação pela inte
 
 ## 💾 Armazenamento no Azure
 
+### Conta de Armazenamento
+- Nome globalmente exclusivo
+- Acesso via internet
+- Definição de redundância
+
+### Redundância
+- LRS: 11 noves
+- ZRS: 12 noves
+
 ### Serviços
 - Blob Storage
 - Disk Storage
 - File Storage
 - Queue Storage
 - Table Storage
-
-### Redundância
-- LRS (11 noves)
-- ZRS (12 noves)
+- Data Lake Storage Gen2
 
 ---
 
@@ -199,7 +209,7 @@ A computação em nuvem é o fornecimento de serviços de computação pela inte
 - Azure Data Box (até 80 TB)
 - AzCopy
 - Storage Explorer
-- File Sync
+- Azure File Sync
 
 ---
 
@@ -207,7 +217,7 @@ A computação em nuvem é o fornecimento de serviços de computação pela inte
 
 ### Microsoft Entra ID
 - Autenticação
-- SSO
+- Single Sign-On (SSO)
 - Gerenciamento de dispositivos
 - B2B
 
@@ -216,10 +226,10 @@ A computação em nuvem é o fornecimento de serviços de computação pela inte
 - Autorização: o que pode fazer
 
 ### MFA
-- Segurança adicional por múltiplos fatores
+- Autenticação multifator para maior segurança
 
-### Controle de Acesso Baseado em Função (RBAC)
-- Permissões granulares
+### RBAC
+- Controle de acesso baseado em função
 - Princípio do menor privilégio
 
 ---
@@ -231,6 +241,7 @@ A computação em nuvem é o fornecimento de serviços de computação pela inte
 - Azure Policy
 - Resource Locks
 - Microsoft Purview
+- Azure Arc
 
 ---
 
@@ -244,4 +255,17 @@ A computação em nuvem é o fornecimento de serviços de computação pela inte
 
 ---
 
-📚 **Objetivo:** Consolidar os fundamentos de Cloud Computing e Microsoft Azure para certificação AZ-900 e projetos práticos.
+## ⚙️ Infraestrutura como Código
+
+### Azure Resource Manager (ARM)
+- Camada de gerenciamento do Azure
+- Criação, atualização e exclusão de recursos
+
+### Templates ARM
+- Arquivos JSON declarativos
+- Recursos reutilizáveis e modulares
+- Validação integrada
+
+### Bicep
+- Linguagem de infraestrutura da Microsoft
+- Sintaxe simplificada em relação ao ARM JSON
