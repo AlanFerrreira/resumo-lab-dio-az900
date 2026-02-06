@@ -1,289 +1,247 @@
-# 📘 Resumo – Fundamentos de Cloud Computing (AZ-900)
+# ☁️ Conceitos Básicos de Cloud – AZ-900
 
-> Conteúdo baseado nas aulas de **Valéria Baptista**, organizado e revisado para fins de estudo e portfólio no GitHub.
-
----
-
-## ☁️ Conceitos de Nuvem
-
-### Computação em Nuvem
-
-Computação em nuvem é o fornecimento de serviços de computação pela internet, permitindo maior agilidade, recursos flexíveis e economia de escala.
+Resumo dos principais conceitos estudados no curso **AZ-900 – Microsoft Azure Fundamentals**, ministrado por **Valéria Baptista**.
 
 ---
 
-## 🌐 Modelos de Nuvem
+## 📌 Computação em Nuvem
 
-### Nuvem Privada
+A computação em nuvem é o fornecimento de serviços de computação pela internet, permitindo:
+- Inovação mais rápida  
+- Recursos flexíveis  
+- Economia de escala  
 
-* Ambiente em nuvem criado no datacenter da própria organização
-* Total responsabilidade da empresa pela operação e manutenção
-* Não oferece acesso a usuários externos
+---
+
+## ☁️ Modelos de Nuvem
+
+### 🔒 Nuvem Privada
+- Criada no datacenter da própria organização  
+- Total responsabilidade sobre operação e manutenção  
+- Não oferece acesso externo  
+
+### 🌐 Nuvem Pública
+- Pertence a um provedor de nuvem (ex: Microsoft Azure)  
+- Recursos compartilhados entre vários clientes  
+- Acesso via conexão segura pela internet  
+
+### 🔀 Nuvem Híbrida
+- Combina nuvem pública e privada  
+- Permite executar aplicações no ambiente mais adequado  
+
+---
+
+## 📊 Comparação dos Modelos de Nuvem
 
 ### Nuvem Pública
-
-* Pertence a provedores de nuvem ou hosting
-* Fornece recursos para múltiplas organizações e usuários
-* Acessada por meio de conexão segura via internet
-
-### Nuvem Híbrida
-
-* Combina nuvem pública e privada
-* Permite executar aplicações no ambiente mais adequado
-
----
-
-## 🔍 Comparação dos Modelos de Nuvem
-
-### Nuvem Pública
-
-* Sem despesa inicial de capital (CapEx)
-* Provisionamento e desprovisionamento rápido
-* Pagamento conforme o uso (Pay as You Go)
+- Sem despesas de capital (CapEx)
+- Provisionamento e desprovisionamento rápidos
+- Pagamento conforme o uso (Pay as You Go)
 
 ### Nuvem Privada
-
-* Controle total sobre recursos e segurança
-* Responsabilidade total pela manutenção e atualização do hardware
+- Controle total de recursos e segurança
+- Responsabilidade total por manutenção e atualizações
 
 ### Nuvem Híbrida
-
-* Flexibilidade para escolher onde executar aplicações
-* Controle de segurança, conformidade e requisitos legais
+- Flexibilidade na execução das aplicações
+- Controle de segurança, conformidade e requisitos legais
 
 ---
 
 ## 💰 CapEx vs OpEx
 
-### CapEx (Despesas de Capital)
+### CapEx (Capital Expenditure)
+- Gasto inicial com infraestrutura física
+- Valor se deprecia ao longo do tempo
 
-* Investimento inicial em infraestrutura física
-* Valor depreciado ao longo do tempo
-
-### OpEx (Despesas Operacionais)
-
-* Pagamento conforme uso
-* Custos cobrados imediatamente
+### OpEx (Operational Expenditure)
+- Pagamento conforme o uso
+- Custos cobrados imediatamente
 
 ### Modelo Baseado em Consumo
-
-* Pagamento apenas pelos recursos utilizados
-* Melhor previsibilidade de custos
-* Cobrança baseada no uso real
+- Pagamento apenas pelos recursos utilizados
+- Melhor previsibilidade de custos
+- Cobrança baseada no uso real
 
 ---
 
 ## 🚀 Benefícios da Nuvem
 
 ### Alta Disponibilidade
-
-* Definida por SLA (Service Level Agreement)
-* Garante níveis de disponibilidade e desempenho
+- Garantida por SLA (Service Level Agreement)
 
 ### Escalabilidade
-
-* Capacidade de aumentar ou reduzir recursos conforme demanda
-* Evita gastos desnecessários
+- Ajuste de recursos conforme a demanda
+- Redução de custos quando a demanda diminui
 
 ### Elasticidade
-
-* Ajuste automático ou manual de recursos em picos ou quedas de demanda
+- Expansão ou redução automática ou manual de recursos
+- Exemplo: adicionar ou remover VMs e containers
 
 ### Confiabilidade
-
-* Arquitetura descentralizada e resiliente
-* Recursos distribuídos globalmente
+- Infraestrutura distribuída globalmente
+- Continuidade mesmo em falhas regionais
 
 ### Previsibilidade
-
-* Planejamento confiável de desempenho e custos
-* Baseado no Azure Well-Architected Framework
+- Controle de desempenho e custos
+- Baseada no Azure Well-Architected Framework
 
 ### Segurança
-
-* Ferramentas robustas de segurança
-* Parte da configuração é responsabilidade do cliente
+- Ferramentas avançadas de proteção
+- Parte da segurança é responsabilidade do cliente
 
 ### Governança
-
-* Mantém o ambiente seguro, organizado e em conformidade
+- Controle, conformidade e padronização desde o início
 
 ### Gerenciabilidade
-
-* Gerenciamento via Portal Web, CLI, APIs e PowerShell
-* Automação e uso de modelos pré-configurados
+- Portal Web
+- CLI
+- APIs
+- PowerShell
 
 ---
 
-## 🧱 Tipos de Serviço em Nuvem
+## 🧩 Tipos de Serviço de Nuvem
 
 ### IaaS – Infrastructure as a Service
-
-* Infraestrutura sob demanda
-* Servidores, VMs, redes e armazenamento
+- Máquinas virtuais
+- Armazenamento
+- Redes
+- Sistemas operacionais
 
 ### PaaS – Platform as a Service
-
-* Ambiente para desenvolvimento e implantação
-* Sem gerenciamento da infraestrutura subjacente
+- Ambiente para desenvolvimento e deploy
+- Sem gerenciamento da infraestrutura
+- Foco em aplicações
 
 ### SaaS – Software as a Service
-
-* Aplicações acessadas via internet
-* Ex: Microsoft 365, e-mail e calendários
+- Aplicações prontas via internet
+- Exemplo: Microsoft 365
 
 ---
 
 ## 🏗️ Arquitetura do Azure
 
 ### Regiões
-
-* Abrangência global
-* Um ou mais datacenters próximos
-* Redução de latência e conformidade de dados
+- Presença global
+- Baixa latência
+- Conformidade de dados
 
 ### Zonas de Disponibilidade
+- Datacenters fisicamente separados
+- Alta disponibilidade e resiliência
 
-* Proteção contra falhas de datacenter
-* Datacenters fisicamente separados
-
-### Pares de Regiões
-
-* Separação mínima de 300 milhas
-* Replicação automática e recuperação priorizada
+### Pares de Região
+- Separação mínima de 300 milhas
+- Replicação automática
+- Atualizações sequenciais
 
 ### Regiões Soberanas
-
-* Serviços governamentais (EUA e China)
-* Instâncias fisicamente isoladas
+- Azure Government (EUA)
+- Azure China (21Vianet)
 
 ---
 
 ## 📦 Recursos do Azure
 
 ### Grupo de Recursos
-
-* Contêiner lógico para gerenciamento de recursos
+- Contêiner lógico para recursos
+- Um recurso pertence a apenas um grupo
 
 ### Assinaturas
-
-* Controle de cobrança e acesso
+- Controle de cobrança
+- Controle de acesso
 
 ### Grupos de Gerenciamento
-
-* Organização hierárquica de múltiplas assinaturas
+- Agrupam várias assinaturas
+- Herança de políticas
 
 ---
 
-## 🖥️ Computação no Azure
+## 🖥️ Serviços de Computação
 
-### Máquinas Virtuais (VMs)
-
-* Emulação de computadores físicos
-* Oferta de IaaS com controle total
-
-### Conjuntos de Dimensionamento
-
-* Escalonamento automático com balanceamento de carga
-
-### Área de Trabalho Virtual
-
-* Ambiente virtual completo
-* Suporte a múltiplas sessões
-
-### Containers
-
-* Ambientes leves e escaláveis
-* AKS para orquestração de containers
-
-### Azure Functions
-
-* Computação sem servidor (Serverless)
-* Execução baseada em eventos
+- Máquinas Virtuais (VMs)
+- App Services
+- Azure Kubernetes Service (AKS)
+- Containers
+- Azure Virtual Desktop
+- Azure Functions (Serverless)
 
 ---
 
 ## 🌐 Serviços de Rede
 
-* Azure Virtual Network (VNet)
-* VPN Gateway
-* ExpressRoute
-* Azure DNS
+- Virtual Network (VNet)
+- VPN Gateway
+- ExpressRoute
+- Azure DNS
 
 ---
 
 ## 💾 Armazenamento no Azure
 
-### Conta de Armazenamento
-
-* Nome globalmente exclusivo
-* Define redundância e serviços disponíveis
+### Serviços
+- Blob Storage
+- Disk Storage
+- File Storage
+- Queue Storage
+- Table Storage
 
 ### Redundância
-
-* LRS: redundância local (11 noves)
-* ZRS: redundância entre zonas (12 noves)
-
-### Serviços
-
-* Blob Storage
-* Disk Storage
-* Queue Storage
-* File Storage
-* Table Storage
+- LRS (11 noves)
+- ZRS (12 noves)
 
 ---
 
-## 🔐 Identidade e Segurança
+## 🔄 Migração para o Azure
+
+- Azure Migrate
+- Azure Data Box (até 80 TB)
+- AzCopy
+- Storage Explorer
+- File Sync
+
+---
+
+## 🔐 Identidade e Acesso
 
 ### Microsoft Entra ID
-
-* Gerenciamento de identidades e acessos
-* SSO, MFA, B2B e gerenciamento de dispositivos
+- Autenticação
+- SSO
+- Gerenciamento de dispositivos
+- B2B
 
 ### Autenticação vs Autorização
-
-* Autenticação: quem é o usuário
-* Autorização: o que ele pode acessar
+- Autenticação: quem é
+- Autorização: o que pode fazer
 
 ### MFA
+- Segurança adicional por múltiplos fatores
 
-* Camada adicional de segurança
+### Controle de Acesso Baseado em Função (RBAC)
+- Permissões granulares
+- Princípio do menor privilégio
 
-### Controle de Acesso (RBAC)
+---
 
-* Acesso granular baseado em funções
+## 🛡️ Segurança e Governança
 
-### Confiança Zero
-
-* Segurança em camadas
-
-### Microsoft Defender for Cloud
-
-* Monitoramento e proteção contra ameaças
+- Zero Trust
+- Microsoft Defender for Cloud
+- Azure Policy
+- Resource Locks
+- Microsoft Purview
 
 ---
 
 ## 💸 Gerenciamento de Custos
 
-### Fatores que Afetam Custos
-
-* Tipo de recurso
-* Consumo
-* Região
-* Tráfego de rede
-
-### Ferramentas
-
-* Calculadora de Preços
-* Calculadora TCO
-* Orçamentos e Alertas
-
-### Tags
-
-* Organização e controle de custos
-* Metadados no formato chave-valor
+- Azure Cost Management
+- Calculadora de Preços
+- Calculadora TCO
+- Orçamentos e Alertas
+- Tags para organização de custos
 
 ---
 
-📌 **Este repositório tem como objetivo consolidar os principais conceitos cobrados na certificação AZ-900, servindo como material de estudo e portfólio técnico.**
+📚 **Objetivo:** Consolidar os fundamentos de Cloud Computing e Microsoft Azure para certificação AZ-900 e projetos práticos.
